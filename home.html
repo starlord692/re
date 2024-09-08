@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneurship Club | St. Antony's College</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>St. Antony's College Entrepreneurship Club</h1>
+        <nav>
+            <a href="#mission">Mission</a>
+            <a href="#vision">Vision</a>
+            <a href="#team">Team</a>
+        </nav>
+        <!-- Admin Login Button -->
+        <button onclick="adminLogin()" id="admin-login-btn">Admin Login</button>
+    </header>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p id="mission-text">To inspire, support, and develop the entrepreneurial spirit among students.</p>
+        <button id="edit-mission" class="admin-btn">Edit Mission</button>
+    </section>
+
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p id="vision-text">Creating the next generation of entrepreneurs who will lead innovation.</p>
+        <button id="edit-vision" class="admin-btn">Edit Vision</button>
+    </section>
+
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member" id="member1">
+                <img src="team1.jpg" alt="Member 1">
+                <h3>John Doe</h3>
+                <p>President</p>
+                <button class="admin-btn" onclick="editMember(1)">Edit</button>
+            </div>
+            <!-- Add more team members here -->
+        </div>
+    </section>
+
+    <!-- Admin section to change the background image -->
+    <section id="background-change">
+        <h2>Change Background Image</h2>
+        <input type="text" id="bg-url" placeholder="Enter background image URL">
+        <button id="change-bg-btn" class="admin-btn">Change Background</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
